@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Beranda Wisata</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Navigasi -->
+<nav class="navbar">
+  <div class="navbar-left">
+    <img src="./images/foto/logow.png" alt="Logo Wisata">
+  </div>
+  <div class="navbar-right">
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Destinasi</a></li>
+      <li><a href="#">Kontak</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Header -->
+<header>
+  <div class="slider">
+    <img class="slide" src="./images/foto/marbella1.jpg">
+    <img class="slide" src="./images/foto/marbella2.jpg">
+    <img class="slide" src="./images/foto/marbella3.jpg">
+  </div>
+  <div class="header-content">
+    <h1>Awaken to a different world</h1>
+  </div>
+</header>
+
+
+<!-- Konten Utama -->
+<main>
+  <section class="destinasi-populer-container">
+    <div class="destinasi-populer">
+      <div class="section-header"></div>
+      <h2>Destinasi Populer</h2>
+      <div class="destinasi-items-container"></div>
+      <div class="explore">
+        <div class="explore-content">
+          <a href="#">Explore</a>
+        </div>
+      </div>
+    </div>
+    <!-- Daftar destinasi populer -->
+    <div class="destinasi">
+      <div class="destinasi-item">
+        <img src="./images/foto/tanjung lesung1.jpg" alt="Tanjung Lesung">
+        <a href="https://www.tanjunglesung.com/" onclick="updateVisitorCount('tanjung-lesung')">Tanjung Lesung</a>
+        <p id="visitor-count-tanjung-lesung">2.345 properties, 746 miles away</p>
+      </div>
+      <div class="destinasi-item">
+        <img src="./images/foto/Pantai-Sawarna.jpg" alt="Pantai Sawarna">
+        <a href="https://www.sawarna.net/pantai-sawarna.xhtml" onclick="updateVisitorCount('pantai-sawarna')">Pantai Sawarna</a>
+        <p id="visitor-count-pantai-sawarna">1.234 properties, 532 miles away</p>
+      </div>
+      <div class="destinasi-item">
+        <img src="./images/foto/marbella1.jpg" alt="Marbella">
+        <a href="./img/marbella1.jpg" onclick="updateVisitorCount('marbella')">Marbella</a>
+        <p id="visitor-count-marbella">3.456 properties, 923 miles away</p>
+      </div>
+      <div class="destinasi-item">
+        <img src="./images/foto/hutankayuputih1.jpg" alt="Hutan Kayu Putih Kragilan">
+        <a href="https://www.tanjunglesung.com/" onclick="updateVisitorCount('hutan-kayu-putih-kragilan')">Hutan Kayu Putih Kragilan</a>
+        <p id="visitor-count-hutan-kayu-putih-kragilan">1.567 properties, 410 miles away</p>
+      </div>
+      <div class="destinasi-item">
+        <img src="./images/foto/leuwi bumi.jpg" alt="leuwi Bumi">
+        <a href="https://padarincang.serangkab.go.id/page/wisata-leuwi-bumi" onclick="updateVisitorCount('leuwi-bumi')">Leuwi Bumi</a>
+        <p id="visitor-count-leuwi-bumi">987 properties, 285 miles away</p>
+      </div>
+      <div class="destinasi-item">
+        <img src="./images/foto/pantaipandan1.jpg" alt="Pantai Pandan">
+        <a href="https://travel.detik.com/domestic-destination/d-6965714/pantai-pandan-carita-ini-rute-dan-harga-tiketnya" onclick="updateVisitorCount('pantai-pandan')">Pantai Pandan</a>
+        <p id="visitor-count-pantai-pandan">4.321 properties, 620 miles away</p>
+      </div>
+      <div class="destinasi-item">
+        <img src="./images/foto/pulau peucang.jpg" alt="Pulau Peucang">
+        <a href="https://tnujungkulon.menlhk.go.id/show/index/82/Pulau-Peucang" onclick="updateVisitorCount('pulau-peucang')">Pulau Peucang</a>
+        <p id="visitor-count-pulau-peucang">2.198 properties, 853 miles away</p>
+      </div>
+      <div class="destinasi-item">
+        <img src="./images/foto/sambolo.jpg" alt="Pantai Sambolo">
+        <a href="https://simparta.serangkab.go.id/home/info/pantai-sambolo-anyer" onclick="updateVisitorCount('pantai-sambolo')">Pantai Sambolo</a>
+        <p id="visitor-count-pantai-sambolo">3.890 properties, 724 miles away</p>
+      </div>
+      <div class="destinasi-item">
+        <img src="./images/foto/wauwangi1.jpg" alt="Waruwangi">
+        <a href="https://www.rumah123.com/explore/kota-serang/bukit-waruwangi/" onclick="updateVisitorCount('waruwangi')">Waruwangi</a>
+        <p id="visitor-count-waruwangi">1.432 properties, 398 miles away</p>
+      </div>
+      <div class="destinasi-item">
+        <img src="./images/foto/masjid agung banten.jpg" alt="Masjid Agung Banten">
+        <a href="https://id.wikipedia.org/wiki/Masjid_Agung_Banten" onclick="updateVisitorCount('masjid-agung-banten')">Masjid Agung Banten</a>
+        <p id="visitor-count-masjid-agung-banten">2.743 properties, 502 miles away</p>
+      </div>
+    </div>
+    
+    <!-- Tambahkan lebih banyak destinasi di sini jika diperlukan -->
+  </section>
+
+  <section id="kolom-destinasi">
+    <h2>Lastest News & Stories</h2>
+    <div class="kolom-destinasi-container">
+      <!-- Daftar destinasi dalam kolom -->
+      <div class="kolom-destinasi-item">
+        <img src="./images/foto/tanjung lesung1.jpg" alt="Tanjung Lesung">
+        <h3>Tanjung Lesung</h3>
+        <p>Deskripsi paket wisata 1.</p>
+        <a href="https://www.tanjunglesung.com/">Tanjung Lesung</a>
+      </div>
+      <!-- Tambahkan item paket wisata lainnya di sini -->
+    </div>
+    <h2>Destinasi Terperinci</h2>
+    <div class="destinasi-items-container">
+      <!-- Daftar destinasi terperinci -->
+      <div class="destinasi-item2">
+        <img src="./images/foto/marbella1.jpg" alt="Marbella">
+        <a href="./images/foto/marbella1.jpg">Marbella</a>
+      </div>
+      <div class="destinasi-item2">
+        <img src="./images/foto/marbella1.jpg" alt="Marbella">
+        <a href="./images/foto/marbella1.jpg">Marbella</a>
+      </div>
+      <div class="destinasi-item2">
+        <img src="./images/foto/marbella1.jpg" alt="Marbella">
+        <a href="./images/foto/marbella1.jpg">Marbella</a>
+      </div>
+      <!-- Tambahkan destinasi lainnya di sini -->
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="pre-footer">
+    <div class="pre-footer-left">
+      <h2>Banten</h2>
+      <p>Explore Banten adalah website promosi pariwisata provinsi Banten yang dikelola Dinas Kebudayaan dan Pariwisata Banten.</p>
+    </div>
+    <div class="pre-footer-right">
+      <h3>Contact With Us</h3>
+      <div class="sosmed">
+        <img src="./images/foto/wa.png">Whatsapp</a><br>
+        <img src="./images/foto/gmail.png">Loregmail</a><br>
+        <a href=""><img src="./images/foto/ig.jpg"></a>
+        <a href=""><img src="./images/foto/twitter.png"></a>
+      </div>
+      
+    </div>
+  </div>
+  <p class="akhir">Hak Cipta &copy; 2024 Situs Wisata Kami</p>
+</footer>
+
+<!-- Script untuk slideshow -->
+<script>
+  let slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Ganti gambar setiap 2 detik
+  }
+</script>
+
+</body>
+</html>
